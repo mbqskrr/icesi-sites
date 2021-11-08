@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/perfilFragment"
+        android:icon="@drawable/user"
+        android:title="Perfil" />
+
+    <item
+        android:id="@+id/publicacionesFragment"
+        android:icon="@drawable/check"
+        android:title="Publicaciones" />
+
+    <item
+        android:id="@+id/mapaFragment"
+        android:icon="@drawable/map"
+        android:title="Mapas" />
+
+</menu>

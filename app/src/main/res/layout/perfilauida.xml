@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:contentDescription="/@mainLayout"
+    tools:ignore="HardcodedText">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/btnNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:background="#D14242"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/defaultCameraIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginBottom="57dp"
+            android:contentDescription="/@cameraIcon"
+            app:layout_constraintBottom_toTopOf="@+id/imageTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/photo_camera_interface_symbol_for_button"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/imageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:layout_marginBottom="430dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Ninguna imagen para mostrar"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/descriptionTxt"
+            android:layout_width="326dp"
+            android:layout_height="119dp"
+            android:layout_marginTop="54dp"
+            android:contentDescription="descriptionTxt"
+            android:fontFamily="@font/roboto_light"
+            android:text="Inserte aquí una descripción apropiada para su negocio. El autor de las publicaciones que haga en el fragmento “publicaciones” será negocio que se registre en este fragment"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Negocio por defecto"
+            android:textColor="#D14242"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSelectBussines"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageTxt" />
+
+        <Button
+            android:id="@+id/buttonSelectBussines"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pencil"
+            android:foreground="@drawable/pencil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageTxt" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="329dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
